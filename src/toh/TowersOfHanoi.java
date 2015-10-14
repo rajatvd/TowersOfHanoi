@@ -212,7 +212,7 @@ public class TowersOfHanoi {
 	public void exit(){
 		//message displayed when window is closed
 		String msg = "Towers of Hanoi v"+VERSION+" made by Rajat V D\n" +
-				"Copyright \u24b8 2013";
+				"2013";
 		JOptionPane.showMessageDialog(jf, msg, "Exiting...", JOptionPane.PLAIN_MESSAGE, imgicon);
 		System.exit(0);
 	}
