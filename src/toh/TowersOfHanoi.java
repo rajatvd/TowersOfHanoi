@@ -66,8 +66,8 @@ public class TowersOfHanoi {
 				// checks if the parsed number is too big or a negative number
 				if(diskno>19||diskno<1){
 					parsable = false;
-					JOptionPane.showMessageDialog(jf, "The number is too big or non-physical!!\n" +
-							"Please enter a proper number!!");
+					JOptionPane.showMessageDialog(jf, "The number is too big or non-physical, \n" +
+							"Please enter a proper number.");
 				}
 			}catch(NumberFormatException e){
 				// catches exception if the raw input cannot be parsed
