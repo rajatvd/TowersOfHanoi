@@ -6,6 +6,8 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.net.URL;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -32,13 +34,11 @@ public class TowersOfHanoi {
 	public TowersOfHanoi(){
 		
 		// to obtain the icon in title bar and exit message
-		imgicon = new ImageIcon(
-						"/res/exiticon.PNG"
-						)
-						;
+		URL url = getClass().getResource("/res/exiticon.PNG");
+		imgicon = new ImageIcon(url);
 		
 		//Graphics
-		
+		System.out.println(imgicon);
 		jf = new JFrame("Towers of Hanoi");
 		// to display exit message when the window is closed.
 		jf.addWindowListener(new WindowAdapter(){
