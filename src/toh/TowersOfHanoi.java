@@ -67,12 +67,12 @@ public class TowersOfHanoi {
 				if(diskno>19||diskno<1){
 					parsable = false;
 					JOptionPane.showMessageDialog(jf, "The number is too big or non-physical, \n" +
-							"Please enter a proper number.");
+							"please enter a proper number.");
 				}
 			}catch(NumberFormatException e){
 				// catches exception if the raw input cannot be parsed
-				JOptionPane.showMessageDialog(jf, "That is not a number!!\n" +
-						"Please enter a proper number!!");
+				JOptionPane.showMessageDialog(jf, "That is not a number,\n" +
+						"please enter a proper number.");
 				parsable = false;
 			}
 		}
